@@ -8,11 +8,11 @@ terraform {
 
   
   backend "s3" {
-#     # bucket = "roboshop-devopsify-prod"
-#     # key    = "multienv"
-#     # region = "us-east-1"
-#     # dynamodb_table = "devopsify-locking-prod"
-   
+     bucket = "devopsify-remote-bucket"
+     key    = "workspace"
+     region = "us-east-1"
+     dynamodb_table = "devopsify-locking"
+
   }
 }
 
