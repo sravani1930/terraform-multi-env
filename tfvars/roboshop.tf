@@ -1,6 +1,6 @@
 resource "aws_instance" "web" {
   for_each = var.instance_names
-  ami = data.aws_ami.centos8.id
+  ami           = data.aws_ami.centos8.id
   instance_type = each.value
   
   tags = {

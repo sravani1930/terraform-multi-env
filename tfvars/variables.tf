@@ -20,3 +20,4 @@ variable "domain_name" {
     
     default = "devopsify.space"
 }
+    
